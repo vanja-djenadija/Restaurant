@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" style="-fx-background-color: FFF3E0;" xmlns="http://javafx.com/javafx/"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.restaurant.controllers.CreateOrderController">
+    <left>
+        <VBox alignment="TOP_CENTER" spacing="10.0" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Label text="Menu">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="menuTableView" editable="true" stylesheets="@../css/style.css">
+                    <columns>
+                        <TableColumn fx:id="menuId" maxWidth="200.0" prefWidth="50.0" text="Id"/>
+                        <TableColumn fx:id="menuName" maxWidth="400.0" minWidth="270.0" prefWidth="200.0" text="Name"/>
+                        <TableColumn fx:id="menuPrice" maxWidth="200.0" minWidth="100.0" prefWidth="100.0"
+                                     text="Price"/>
+                    </columns>
+                </TableView>
+                <Button fx:id="addItemButton" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addItemToOrder"
+                        prefHeight="30.0" prefWidth="30.0" styleClass="navigation-bar-button"
+                        stylesheets="@../css/style.css" textAlignment="CENTER" translateX="180.0" VBox.vgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/add.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="5.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </left>
+    <right>
+        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="405.0" spacing="10.0"
+              BorderPane.alignment="CENTER_RIGHT">
+            <children>
+                <Label text="Order">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="orderTableView" editable="true" stylesheets="@../css/style.css">
+                    <columns>
+                        <TableColumn fx:id="orderItemId" prefWidth="50.0" text="Id"/>
+                        <TableColumn fx:id="orderItemName" minWidth="185.0" prefWidth="-1.0" text="Name"/>
+                        <TableColumn fx:id="orderItemQuantity" maxWidth="200.0" text="Quantity"/>
+                        <TableColumn fx:id="orderItemPrice" maxWidth="200.0" text="Price"/>
+                    </columns>
+                </TableView>
+                <Button fx:id="removeItemButton" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                        onAction="#removeItemFromOrder" prefHeight="30.0" prefWidth="30.0"
+                        styleClass="navigation-bar-button" stylesheets="@../css/style.css" textAlignment="CENTER"
+                        translateX="180.0">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/remove.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+            <padding>
+                <Insets right="5.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </right>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" BorderPane.alignment="CENTER_RIGHT">
+            <children>
+                <ComboBox fx:id="tableComboBox" promptText="Table"
+                          style="-fx-background-radius: 20 20 20 20; -fx-background-color: E28F61;"
+                          visibleRowCount="20"/>
+                <Button fx:id="createOrderButton" mnemonicParsing="false" onAction="#createOrder"
+                        style="-fx-background-radius: 20 20 20 20; -fx-background-color: E65100;" text="Create Order"
+                        textAlignment="JUSTIFY">
+                    <font>
+                        <Font size="15.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <padding>
+        <Insets bottom="10.0" left="5.0" right="5.0"/>
+    </padding>
+</BorderPane>

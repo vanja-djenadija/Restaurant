@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/1"
+            xmlns:fx="http://javafx.com/fxml/" fx:controller="com.restaurant.controllers.OrdersController">
+    <top>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0"
+              prefWidth="900.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="addButton" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity"
+                        maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                        onAction="#addOrder" prefHeight="30.0" prefWidth="30.0" styleClass="navigation-bar-button"
+                        stylesheets="@../css/style.css">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/add.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="deleteButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="30.0"
+                        prefWidth="30.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/delete.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="makeBillButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#makeBill" prefHeight="30.0"
+                        prefWidth="30.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/bill.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="30.0" prefWidth="300.0" translateX="400.0">
+                    <children>
+                        <TextField fx:id="searchField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                   minWidth="-Infinity" onAction="#searchOrder" prefHeight="30.0" prefWidth="250.0"
+                                   promptText="Search" style="-fx-background-radius: 10;" translateX="50.0">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </TextField>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                   translateX="10.0">
+                            <image>
+                                <Image url="@../img/search.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tableView" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-1.0"  prefHeight="540.0" prefWidth="880.0"
+                   stylesheets="@../css/style.css" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="id" maxWidth="100.0" minWidth="50.0" prefWidth="-1.0" text="Id"/>
+                <TableColumn fx:id="dateTime" maxWidth="300.0" minWidth="200.0" prefWidth="-1.0" text="Date Time"/>
+                <TableColumn fx:id="tableId" maxWidth="-Infinity" minWidth="200.0" prefWidth="-1.0"
+                             text="Table Number"/>
+                <TableColumn fx:id="status" maxWidth="-Infinity" minWidth="200.0" prefWidth="-1.0" text="Status"/>
+                <TableColumn fx:id="billId" maxWidth="-Infinity" minWidth="210.0" prefWidth="-1.0" text="Bill Number"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

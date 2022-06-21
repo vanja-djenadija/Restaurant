@@ -1,0 +1,147 @@
+.root {
+    -fx-background-radius: 10;
+}
+
+.some-node {
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #FCB115;
+}
+
+.navigation-bar {
+    -fx-background-color: linear-gradient(to top, #FFE0B2, #E65100);
+    -fx-background-radius: 20 0 0 20;
+    -fx-opacity: 0.8;
+}
+
+.navigation-bar-second {
+    -fx-background-color: transparent;
+    -fx-border-color: rgb(43, 43, 43);
+    -fx-border-width: 0 0.5 0 0;
+    -fx-padding: 10;
+    -fx-spacing: 8;
+    -fx-background-radius: 0 0 0 0;
+    -fx-opacity: 0.8;
+}
+
+.navigation-bar-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.navigation-bar-button:hover {
+    -fx-background-color: #FFE2B3;
+}
+
+.navigation-bar-button:pressed {
+    -fx-background-color: #ee500a;
+}
+
+.tile {
+    -fx-background-color: linear-gradient(to right, #FFB74D, #F57C00);
+    -fx-opacity: 0.6;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.heading {
+    -fx-background-color: black;
+}
+
+.vbox {
+    -fx-background-color: FFB74D;
+}
+
+/* PODEŠAVANJA TABELE */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 14;
+    -fx-text-fill: #2F3239;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: red;
+    -fx-font-weight: bolder;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #FFF3E0;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #ee500a, rgba(234, 216, 189, 0.88));
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(249, 190, 147, 0.07);
+    -fx-text-background-color: #1d0b00;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(249, 201, 147, 0.07);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-cell-size: 30;
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgba(221, 74, 29, 0.07);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-cell-size: 30;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to bottom, #ead8bd, #ee500a);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: linear-gradient(to right, #ead8bd, #ee500a);
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+
+}
+
+.dialog-pane {
+    -fx-background-color: #FFF3E0;
+    -fx-font-size: 12;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: black;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #E9A55B;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-size: 18 px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}

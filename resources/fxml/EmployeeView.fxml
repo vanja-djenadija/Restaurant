@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-radius: 20; -fx-background-color: FFF3E0; -fx-border-insets: 10 10 10 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.restaurant.controllers.EmployeeController">
+    <left>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="105.0" styleClass="navigation-bar" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="100.0">
+                    <children>
+                        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#home" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Home" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="tablesButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="15.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Tables" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/table.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="ordersButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="15.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#orders" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Orders" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/order.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="menuButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="15.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#menu" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Menu" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/menu.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="codeBookButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="15.0" layoutY="330.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#codeBook" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Categories" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/list.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="logoutButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="15.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logOut" prefHeight="85.0" prefWidth="105.0" styleClass="navigation-bar-button" stylesheets="@../css/style.css" text="Logout" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/logout.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets left="5.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

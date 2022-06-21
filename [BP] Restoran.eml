@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_16" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" scope="TEST"/>
+	<lib name="Maven: org.opentest4j:opentest4j:1.2.0" scope="TEST"/>
+	<lib name="Maven: org.junit.platform:junit-platform-commons:1.8.1" scope="TEST"/>
+	<lib name="Maven: org.apiguardian:apiguardian-api:1.1.2" scope="TEST"/>
+	<lib name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" scope="TEST"/>
+	<lib name="Maven: org.junit.platform:junit-platform-engine:1.8.1" scope="TEST"/>
+	<levels>
+		<level name="Maven: org.openjfx:javafx-controls:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-controls:win:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-graphics:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-graphics:win:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-base:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-base:win:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-fxml:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-fxml:win:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-web:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-web:win:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-media:16" value="project"/>
+		<level name="Maven: org.openjfx:javafx-media:win:16" value="project"/>
+		<level name="Maven: org.controlsfx:controlsfx:11.1.0" value="project"/>
+		<level name="Maven: com.dlsc.formsfx:formsfx-core:11.3.2" value="project"/>
+		<level name="Maven: net.synedra:validatorfx:0.1.13" value="project"/>
+		<level name="Maven: org.kordamp.ikonli:ikonli-javafx:12.2.0" value="project"/>
+		<level name="Maven: org.kordamp.ikonli:ikonli-core:12.2.0" value="project"/>
+		<level name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" value="project"/>
+		<level name="Maven: eu.hansolo:tilesfx:11.48" value="project"/>
+		<level name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" value="project"/>
+		<level name="Maven: org.opentest4j:opentest4j:1.2.0" value="project"/>
+		<level name="Maven: org.junit.platform:junit-platform-commons:1.8.1" value="project"/>
+		<level name="Maven: org.apiguardian:apiguardian-api:1.1.2" value="project"/>
+		<level name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" value="project"/>
+		<level name="Maven: org.junit.platform:junit-platform-engine:1.8.1" value="project"/>
+	</levels>
+</component>

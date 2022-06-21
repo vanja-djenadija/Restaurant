@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.restaurant.controllers.EmployeeController">
+    <children>
+
+
+        <TilePane alignment="CENTER" hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                  minWidth="-Infinity" prefHeight="600.0" prefWidth="895.0" vgap="20.0">
+            <children>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            opacity="0.0" prefHeight="260.0" prefWidth="390.0" styleClass="tile"
+                            stylesheets="@../css/style.css">
+                    <children>
+                        <Label layoutX="40.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" text="RESTAURANT DETAILS" translateX="-30.0"
+                               translateY="-10.0">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="260.0" prefWidth="390.0" styleClass="tile" stylesheets="@../css/style.css">
+                    <children>
+                        <Label layoutX="106.0" layoutY="44.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="74.0"
+                               text="PHOTOS" translateX="-90.0" translateY="-40.0">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="260.0" prefWidth="390.0" styleClass="tile" stylesheets="@../css/style.css">
+                    <children>
+                        <Label layoutX="94.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="90.0"
+                               text="ADDRESS" translateX="-80.0" translateY="-30.0">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="260.0" prefWidth="390.0" styleClass="tile" stylesheets="@../css/style.css">
+                    <children>
+                        <StackPane prefHeight="260.0" prefWidth="390.0">
+                            <children>
+                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                       minWidth="-Infinity" prefHeight="22.0" prefWidth="178.0" text="WORKING HOURS"
+                                       translateX="-90.0" translateY="-110.0">
+                                    <font>
+                                        <Font name="System Bold" size="15.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets top="30.0"/>
+            </padding>
+        </TilePane>
+        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Home"
+               translateX="50.0">
+            <font>
+                <Font name="Segoe UI Light" size="29.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
